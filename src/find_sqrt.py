@@ -1,10 +1,7 @@
 import sys
 
 def guess (lower, upper):
-    """Return an estimate of the square root of a number between lower and upper.
-
-    Uses binary search to approximate the square root.
-
+    """Computes an estimate of the square root of a number between lower and upper.
     Args:
         lower (float): The lower bound of the range.
         upper (float): The upper bound of the range.
@@ -24,13 +21,11 @@ def guess (lower, upper):
         guess(lower, mid)
 
 ###################################
-# Start of program
+# Start of main program logic
 ##################################
-
-# Accuracy of result is pre-defined here. You can modify this value to increase or decrease the precision.
-# More precision will require more iterations to converge.
-tolerance = 1e-7
-counter = 0
+ 
+tolerance = 1e-7    # Accuracy of result is pre-defined here. More precision will require more iterations to converge.
+counter = 0          # To track number of iterations
 
 target = input("Enter an integer more than zero to find the square root of: ")
 try:
