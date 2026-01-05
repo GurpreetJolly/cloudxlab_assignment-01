@@ -1,2 +1,2 @@
-# cloudxlab_assignment-01
+# Assignment 01
 Compute square root using power function only.
