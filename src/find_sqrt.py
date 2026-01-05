@@ -33,11 +33,16 @@ tolerance = 1e-7
 counter = 0
 
 target = input("Enter an integer more than zero to find the square root of: ")
-
-if len(target) > 18:
-    raise ValueError(f"The input cannot be more than 18 characters long.")
-elif type(target) is not str or not target.isdigit():
-    raise ValueError("The input must be a non-negative integer.")
-else:
-    target = int(target)
-    guess(0, target)
+try:
+    if len(target) > 18:
+        raise ValueError(f"The input cannot be more than 18 characters long.")
+    elif type(target) is not str or not target.isdigit():
+        raise ValueError("The input must be a non-negative integer.")
+    else:
+        target = int(target)
+        guess(0, target)
+except ValueError as ve:
+    print(f"Invalid input: {ve}")
+except Exception as e:
+    print(f"An unexpected error occurred: {e}")
+    sys.exit(1)
