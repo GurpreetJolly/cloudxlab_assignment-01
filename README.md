@@ -1,2 +1,3 @@
-# cloudxlab_assignment-01
-Compute square root using power function only.
+# Assignment 01
+- Compute square root without using inbuild function.
+- Compute Log base10 without using inbuild function.
